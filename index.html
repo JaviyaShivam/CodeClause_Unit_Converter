@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <nav>
+        <h1>Welcome to SJ Online Unit Converter</h1>
+    </nav>
+    <section id="converter">
+
+<!-- LENGTH -->
+        <div class="container" id="length">
+            <div class="heading">
+                <h2>Length</h2>
+            </div>
+            <p>From:</p>
+            <div class="input_line">
+                <select name="unitfrom" id="unitfrom_length">
+                    <option value="meter">Meter</option>
+                    <option value="kilometer">KiloMeter</option>
+                    <option value="centimeter">CentiMeter</option>
+                    <option value="millimeter">MilliMeter</option>
+                    <option value="micrometer">MicroMeter</option>
+                    <option value="mile">Mile</option>
+                    <option value="foot">Foot</option>
+                    <option value="inch">Inch</option>
+                    <option value="yard">Yard</option>
+                </select>
+<!-- INPUT LENGTH -->
+                <input class="inputbox" type="number" name="input1" id="input_length" autofocus>
+            </div>
+            <p>To:</p>
+            <div class="output_line">
+                <select name="unitto" id="unitto_length">
+                    <option value="meter">Meter</option>
+                    <option value="kilometer">KiloMeter</option>
+                    <option value="centimeter">CentiMeter</option>
+                    <option value="millimeter">MilliMeter</option>
+                    <option value="micrometer">MicroMeter</option>
+                    <option value="mile">Mile</option>
+                    <option value="foot">Foot</option>
+                    <option value="inch">Inch</option>
+                    <option value="yard">Yard</option>
+                </select>
+<!-- OUTPUT LENGTH -->
+                <input class="inputbox" type="number" name="result1" id="result_length" disabled>
+            </div>
+            <button class="btn" onclick="calc_length()">Convert</button>
+        </div>
+
+<!-- WEIGHT -->
+        <div class="container" id="weight">
+            <div class="heading">
+                <h2>Weight</h2>
+            </div>
+            <p>From:</p>
+            <div class="input_line">
+                <select name="unitfrom" id="unitfrom_weight">
+                    <option value="milligram">MiliGram</option>
+                    <option value="gram">Gram</option>
+                    <option value="kilogram">KiloGram</option>
+                    <option value="pound">Pound</option>
+                    <option value="ounce">Ounce</option>
+                    <option value="carrat">Carrat</option>
+                    <option value="metricton">Metric Ton</option>
+                    <option value="longton">Long Ton</option>
+                    <option value="shortton">Short Ton</option>
+                </select>
+<!-- INPUT WEIGHT -->
+                <input class="inputbox" type="number" name="input1" id="input_weight" autofocus>
+            </div>
+            <p>To:</p>
+            <div class="output_line">
+                <select name="unitto" id="unitto_weight">
+                    <option value="milligram">MiliGram</option>
+                    <option value="gram">Gram</option>
+                    <option value="kilogram">KiloGram</option>
+                    <option value="pound">Pound</option>
+                    <option value="ounce">Ounce</option>
+                    <option value="carrat">Carrat</option>
+                    <option value="metricton">Metric Ton</option>
+                    <option value="longton">Long Ton</option>
+                    <option value="shortton">Short Ton</option>
+                </select>
+<!-- OUTPUT WEIGHT -->
+                <input class="inputbox" type="number" name="result1" id="result_weight" disabled>
+            </div>
+            <button class="btn" onclick="calc_weight()">Convert</button>
+        </div>
+        
+<!-- TEMPRETURE -->
+        <div class="container" id="temp">
+            <div class="heading">
+                <h2>Tempreture</h2>
+            </div>
+            <p>From:</p>
+            <div class="input_line">
+                <select name="unitfrom" id="unitfrom_temp">
+                    <option value="kelvine">Kelvine</option>
+                    <option value="celcius">Celcius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                </select>
+<!-- INPUT TEMPRETURE -->
+                <input class="inputbox" type="number" name="input1" id="input_temp" autofocus>
+            </div>
+            <p>To:</p>
+            <div class="output_line">
+                <select name="unitto" id="unitto_temp">
+                    <option value="kelvine">Kelvine</option>
+                    <option value="celcius">Celcius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                </select>
+<!-- OUTPUT TEMPRETURE -->
+                <input class="inputbox" type="number" name="result1" id="result_temp" disabled>
+            </div>
+            <button class="btn" onclick="calc_temp()">Convert</button>
+        </div>
+
+<!-- TIME -->
+        <div class="container" id="time">
+            <div class="heading">
+                <h2>Time</h2>
+            </div>
+            <p>From:</p>
+            <div class="input_line">
+                <select name="unitfrom" id="unitfrom_time">
+                    <option value="millisecond">MilliSecond</option>
+                    <option value="microsecond">MicroSecond</option>
+                    <option value="second">Second</option>
+                    <option value="minute">Minute</option>
+                    <option value="hour">Hour</option>
+                    <option value="day">Day</option>
+                    <option value="week">Week</option>
+                    <option value="month">Month</option>
+                    <option value="year">Year</option>
+                </select>
+<!-- INPUT TIME -->
+                <input class="inputbox" type="number" name="input1" id="input_time" autofocus>
+            </div>
+            <p>To:</p>
+            <div class="output_line">
+                <select name="unitto" id="unitto_time">
+                    <option value="millisecond">MilliSecond</option>
+                    <option value="microsecond">MicroSecond</option>
+                    <option value="second">Second</option>
+                    <option value="minute">Minute</option>
+                    <option value="hour">Hour</option>
+                    <option value="day">Day</option>
+                    <option value="week">Week</option>
+                    <option value="month">Month</option>
+                    <option value="year">Year</option>
+                </select>
+<!-- OUTPUT TIME -->
+                <input class="inputbox" type="number" name="result1" id="result_time" disabled>
+            </div>
+            <button class="btn" onclick="calc_time()">Convert</button>
+        </div>
+    </section>
+
+    <footer>All Rights Reserved&copy; SJ Online Unit Converter</footer>
+
+    <script src="converter.js"></script>
+</body>
+</html>
